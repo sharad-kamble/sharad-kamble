@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="author" content="Sharad kamble">
+  <meta property="og:type" content="website">
+
+  <title>Sharad Kamble</title>
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="loader.css">
+
+  <!-- CDN's -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+</head>
+
+<body>
+  <!--Toaster-->
+  <div class="toaster"></div>
+  <!--Div for background-->
+  <div class="bg-div"></div>
+
+  <!-----------------------
+            HEADER
+    ------------------------->
+
+  <header class="header" id="header">
+    <div class="logo"><img src="./assets/logo-sharad-kamble.png" alt="logo"></div>
+
+
+    <p class="logo initials" tabindex="1" href=""></p>
+    <div class="navbar">
+      <ul class="navbar-list">
+        <li><a class="navbar-link active" name="home" onclick="scrollToSection(this),toggleNav()" tabindex="4">Home</a>
+        </li>
+        <li><a class="navbar-link" name="about" onclick="scrollToSection(this),toggleNav()" tabindex="5">About</a></li>
+        <li><a class="navbar-link" name="skills" onclick="scrollToSection(this),toggleNav()" tabindex="6">Skills</a>
+          <li><a class="navbar-link" name="experience" onclick="scrollToSection(this),toggleNav()" tabindex="6">Experience</a>
+        </li>
+        <li><a class="navbar-link" name="projects" onclick="scrollToSection(this),toggleNav()" tabindex="7">Projects</a>
+        </li>
+        <li><a class="navbar-link" name="education" onclick="scrollToSection(this),toggleNav()"
+            tabindex="8">Education</a></li>
+      </ul><a class="contactBtn button" name="getInTouch" tabindex="10"
+        href="https://www.linkedin.com/in/sharad-kamble-024041166/" target="_blank">Contact</a><ion-icon tabindex="9"
+        name="close-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+    </div><ion-icon tabindex="3" name="menu-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+  </header>
+
+  <!-----------------------
+          HOME SECTION
+    ------------------------->
+
+  <section class="section home-section" id="home" tabindex="42">
+    <div>
+      <h1>Hey, I'm <span class="name">Sharad</span></h1>
+      <p class="aboutShort">I'm a passionate web developer with one year of experience in creating
+        user-friendly and visually appealing websites. My journey in web development began with a curiosity to bring
+        ideas to life on the digital canvas.</p><button class="about-me-btn button" name="about"
+        onclick="scrollToSection(this)" tabindex="2">About Me<ion-icon
+          name="chevron-forward-outline"></ion-icon></button>
+    </div>
+
+    <div class="imgDiv">
+      <img src="./assets/profile.png" class="profile-image">
+    </div>
+
+  </section>
+
+  <!-----------------------
+          ABOUT SECTION
+    ------------------------->
+
+  <section id="about" class="section about-section" tabindex="11">
+    <div class="about-ill"><img src="./assets/aboutMemoji.png" alt="Memoji"></div>
+    <div class="aboutMe" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
+      <h2 class="name">Sharad kamble</h2>
+      <div class="professionContainer">
+        <p class="profession">Web Developer</p>
+      </div><br>
+      <p class="aboutLong">Hi there! I'm a web developer with one year of experience in web development. I have
+        knowledge of React, Node.js, Express, SQL, MongoDB, and PHP. I'm passionate about creating visually appealing
+        and responsive web applications that provide excellent user experiences. I particularly enjoy working with React
+        for its flexibility and scalability in building dynamic web applications.</p><br>
+      <p class="aboutLong">
+        Throughout my journey, I've had the opportunity to work on two
+        significant projects that have enriched my skills and deepened my understanding of web development
+      </p><br>
+      <br><a class="button" href="./assets/Sharad's resume.pdf" target="_blank" tabindex="12">Resume<ion-icon
+          name="document-outline"></ion-icon></a>
+    </div>
+    <ul class="social-menu" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
+      <li id="linkedin"><a target="_blank" href="https://www.linkedin.com/in/sharad-kamble-024041166/"
+          aria-label="linkedin" class="linkedin" tabindex="13"><i class="fab fa-linkedin-in"></i></a></li>
+      <li id="github"><a target="_blank" href="https://github.com/sharadkamble-sk" aria-label="github" class="github"
+          tabindex="14"><i class="fab fa-github"></i></a></li>
+      <li id="twitter"><a target="_blank" href="https://twitter.com/sharadkamble_sk" aria-label="twitter"
+          class="twitter" tabindex="16"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+  </section>
+
+  <!-----------------------
+        SKILLS SECTION
+    ------------------------->
+
+  <section class="section skill-section" id="skills" tabindex="17">
+    <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">My Skills<p>Tiles in <span>blue</span> are some of my major skills.</p>
+      </h1>
+      <div class="skill-container">
+        <div class="major"><img src="./assets/html_mcptab.svg" alt="Skill image 1">
+          <p>HTML</p>
+        </div>
+        <div class="major"><img src="./assets/css3_lhv35v.svg" alt="Skill image 1">
+          <p>CSS3</p>
+        </div>
+
+
+        <div class="major"><img src="./assets/javascript_swauvr.svg" alt="Skill image 1">
+          <p>JavaScript</p>
+        </div>
+        <div class="major"><img src="./assets/bootstrap.svg" alt="Skill image 1">
+          <p>Bootstrap</p>
+        </div>
+        <div class="major"><img src="./assets/php.svg" alt="Skill image 1">
+          <p>Php</p>
+        </div>
+        <div class="major"><img src="./assets/react.svg" alt="Skill image 1">
+          <p>React</p>
+        </div>
+        <div class="major"><img src="./assets/icons8-nodejs.svg" alt="Skill image 1">
+          <p>Node.js</p>
+        </div>
+        <div class="major"><img src="./assets/express.svg" alt="Skill image 1">
+          <p>Express</p>
+        </div>
+        <div class="major"><img src="./assets/mongodb.png" alt="Skill image 1">
+          <p>MongoDB</p>
+        </div>
+        <div class="major"><img src="./assets/mysql.svg" alt="Skill image 1">
+          <p>MySQL</p>
+        </div>
+        <div class="minor"><img src="./assets/angular.svg" alt="Skill image 3">
+          <p>Angular</p>
+        </div>
+        <div class="minor"><img src="./assets/github-logo_s0trsu.png" alt="Skill image 3">
+          <p>Git and GitHub</p>
+        </div>
+        <div class="minor"><img src="./assets/c++_Logo.png" alt="Skill image 3">
+          <p>C++</p>
+        </div>
+        <div class="minor"><img src="./assets/java.gif" alt="Skill image 3">
+          <p>Java</p>
+        </div>
+        <div class="minor"><img src="./assets/python.svg" alt="Skill image 3">
+          <p>Python</p>
+        </div>
+        <div class="minor"><img src="./assets/django.svg" alt="Skill image 3">
+          <p>Django</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!------------------
+    work experience 
+  ------------------------>
+  <section id="experience" class="section about-section" tabindex="11">
+
+    <div class="aboutMe" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
+      <div class="section-header">
+        <h1 class="title">Experience<p class="sectionDesc">
+            Here is a quick summary of my most recent experiences.</a>
+          </p>
+
+      </div>
+      <div class="container mt-4 pt-2">
+        <div class="timeline-page position-relative">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <a target="_blank" class="duration date-label-left position-relative"
+                      href="https://radiantitservices.in/">
+                      <img alt="" class="w-100 img-fluid object-fit-cover" src="assets/radiant.png">
+                      <h5 class="my-2">Radiant IT Services Private Limited</h5>
+                      <div class="professionContainer">
+                        <p class="profession">March 2023 - Present</p>
+                      </div>
+
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="event event-description-right float-left text-start">
+                      <h6 class="title mb-1 text-capitalize">Web Developer</h6>
+                      <p class="timeline-subtitle mt-3 mb-0 text-muted">Responsible for designing, developing, and
+                        maintaining diverse web projects. Collaborated cross-functionally to grasp project needs,
+                        translating designs into fully functional websites. Ensured optimal performance and user
+                        experience.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 order-lg-2">
+                    <a target="_blank" class="duration date-label-left position-relative" href="https://oxvsys.com/">
+                      <img alt="" class="w-100 img-fluid object-fit-cover" src="assets/oxvsys-logo.svg">
+                      <h5 class="my-2">Oxvsys Automation Technologies Private Limited</h5>
+                      <div class="professionContainer">
+                        <p class="profession">May 2021 - July 2021</p>
+                      </div>
+                      <small class="text-muted mb-0"></small>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 order-lg-1">
+                    <div class="event event-description-left float-left text-end">
+                      <h6 class="title mb-1 text-capitalize">Frontend Developer</h6>
+                      <img alt="" class="w-100 img-fluid object-fit-cover"
+                        src="assets/other-companies-logo/sp_college.jpg">
+                      <p class="timeline-subtitle mt-3 mb-0 text-muted">
+                        To translate design concepts
+                        into functional websites. Assisted in optimizing performance and enhancing user experience
+                        through testing and issue resolution.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more timeline items here -->
+        </div>
+
+      </div>
+
+  </section>
+
+  <!-------------------------
+        PROJECT SECTION
+    ------------------------->
+  <section class="section main project-section" id="projects" tabindex="18">
+    <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <div class="section-header">
+        <h1 class="title">My recent work<p class="sectionDesc">
+            Here are a few past projects I've worked on. Want to see more?<a href="mailto:sharadkamble131@gmail.com"
+              tabindex="22">
+              Email me ></a>
+          </p>
+        </h1><img class="ProjectHeaderImage" src="./assets/project-head.png" alt="Project header image">
+      </div>
+      <div class="project card-container">
+
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/radiant-it.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Radiant IT Services Pvt.Ltd</h6>
+          <p class="techstack"><span> Techstack </span> - HTML, CSS, Javascript, Bootstrap, Php, MySQL</p>
+
+
+          <div class="options">
+            <a class="viewElem" href="https://radiantitservices.in/" target="_blank"><ion-icon
+                name="open-outline"></ion-icon></a>
+
+          </div>
+        </div>
+
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/Saya.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Saya Elevator Industry</h6>
+          <p class="techstack"><span> Techstack </span> - HTML, CSS, Javascript, Bootstrap, Php, MySQL</p>
+          <div class="options">
+            <a class="viewElem" href="https://sayaelevatorindustries.com/" target="_blank"><ion-icon
+                name="open-outline"></ion-icon></a>
+          </div>
+        </div>
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/landing page.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Landing Page</h6>
+          <p class="techstack"><span> Techstack </span> - HTML, CSS, Javascript</p>
+          <div class="options">
+            <a class="viewElem" href="https://responsive-university-sharad.firebaseapp.com/index.html"
+              target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-----------------------
+        EDUCATION SECTIONS
+    ------------------------->
+
+  <section class="section education-section" id="education" tabindex="23">
+    <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">Education<p>These are some of my past qualifications.</p>
+      </h1>
+      <div class="card-container">
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/graduation.png" alt="Institute image">
+          </div><br>
+
+          <h6 class="courseName">BE | Computer Engineering</h6>
+          <p class="instituteName">Shree Ramchandra College Of Engineering, Pune</p><br>
+          <p class="status Completed">Completed 2020-2023</p>
+        </div>
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/high-school.png" alt="Institute image">
+          </div><br>
+
+          <h6 class="courseName">HSC | Science</h6>
+          <p class="instituteName">Bhartiya Jain Sanghatana College, Wagholi</p><br>
+          <p class="status Completed">Completed 2015-2017</p>
+        </div>
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/edu.png" alt="Institute image">
+          </div><br>
+
+          <h6 class="courseName">State Secondary Certificate (SSC)</h6>
+          <p class="instituteName">Dr.Basu Vidydham, Lonikand</p><br>
+          <p class="status Completed">Completed 2015</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-----------------------
+        FOOTER SECTION
+  ------------------------->
+
+  <footer class="footer" tabindex="35">
+    <div class="getInTouch">
+      <h3>Start a project?</h3>
+      <p>Interested in working together? We should queue up a time to chat. I'll buy the tea</p><a
+        class="getInTouchBtn button" target="_blank" href="mailto:sharadkamble131@gmail.com" tabindex="36">Get in touch</a>
+    </div>
+    <div class="footerParent">
+
+      <div class="profInfo">
+        <div class="imgDiv">
+          <img src="./assets//project.png" alt="Profile Image">
+        </div>
+
+        <p>Sharad kamble<br>Mail me at <a href="mailto:sharadkamble131@gmail.com"
+            tabindex="37">sharadkamble131@gmail.com</a>
+        </p>
+      </div>
+      <div class="reachMeOut">
+        <h3>Reach me out on</h3>
+        <ul class="social-menu">
+          <li id="linkedin" a href="https://www.linkedin.com/in/sharad-kamble-024041166/" class="linkedin" tabindex="38"
+            aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+          <li id="github"><a href="https://github.com/sharadkamble-sk" aria-label="github" class="github"
+              tabindex="39"><i class="fab fa-github"></i></a></li>
+          <li id="twitter"><a href="https://twitter.com/sharadkamble_sk" aria-label="twitter" class="twitter"
+              tabindex="41"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="firebase.js"></script>
+  <script src="./commonScript.js"></script>
+  <script src="script.js"></script>
+
+  <!-- External scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init()</script>
+</body>
+
+</html>
